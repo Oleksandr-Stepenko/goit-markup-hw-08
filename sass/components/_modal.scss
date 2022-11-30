@@ -47,24 +47,6 @@
 	}
 }
 
-// .modal {
-// 	position: absolute;
-// 	width: 528px;
-// 	max-height: 581px;
-// 	padding: 40px;
-
-// 	top: 50%;
-// 	left: 50%;
-
-// 	background-color: $primery-background;
-// 	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-// 		0px 2px 1px rgba(0, 0, 0, 0.2);
-// 	border-radius: 4px;
-
-// 	transform: translate(-50%, -50%) scale(1);
-// 	transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
-
 .button-close {
 	position: absolute;
 	top: 8px;
@@ -109,16 +91,6 @@
 	}
 }
 
-// .form-title {
-// 	font-weight: 700;
-// 	font-size: 20px;
-// 	line-height: 1.15;
-// 	text-align: center;
-// 	letter-spacing: 0.03em;
-// 	margin-bottom: 12px;
-// 	color: $color-text;
-// }
-
 textarea {
 	resize: none;
 
@@ -133,13 +105,6 @@ textarea {
 		width: 448px;
 	}
 }
-
-// .calling-form {
-// 	width: 448px;
-// 	margin-left: auto;
-// 	margin-right: auto;
-// }
-
 
 .modal-form-field {
 	margin-bottom: 10px;
@@ -166,16 +131,6 @@ textarea {
 	}
 }
 
-// .form-label {
-// 	margin-bottom: 6px;
-// 	font-weight: 400;
-// 	font-size: 12px;
-// 	line-height: 0.86;
-// 	letter-spacing: 0.01em;
-
-// 	color: $color-text-secohd;
-// }
-
 .form-input {
 	font-size: 16px;
 	width: 100%;
@@ -199,14 +154,6 @@ textarea {
 		top: 28px;
 	}
 }
-
-// .form-icon {
-// 	position: absolute;
-// 	top: 28px;
-// 	left: 12px;
-// 	fill: currentColor;
-// 	transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
-// }
 
 .form-field:focus-within>.form-comment,
 .form-field:focus-within>.form-input {
@@ -234,10 +181,6 @@ textarea {
 		margin-bottom: 20px;
 	}
 }
-
-// .modal-coment-field {
-// 	margin-bottom: 20px;
-// }
 
 .form-checkbox {
 	display: flex;
@@ -298,21 +241,3 @@ textarea {
 		line-height: 1.71;
 	}
 }
-
-// .checkbox-text {
-// 	font-size: 14px;
-// 	line-height: 1.71;
-// 	letter-spacing: 0.03em;
-// 	user-select: none;
-
-// 	color: $color-text-secohd;
-// }
-
-// .checkbox-link {
-// 	font-weight: 400;
-// 	font-size: 14px;
-// 	line-height: 1.71;
-// 	letter-spacing: 0.03em;
-// 	text-decoration-line: underline;
-// 	color: $color-text-logo;
-// }
