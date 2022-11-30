@@ -588,17 +588,6 @@ p {
   background-color: #188ce8;
 }
 
-.filter-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-  gap: 8px;
-}
-
 .button {
   cursor: pointer;
   font-family: inherit;
@@ -1037,6 +1026,19 @@ p {
   fill: currentColor;
 }
 
+.filter-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 40px;
+  gap: 8px;
+}
+
 .project-title {
   font-weight: 700;
   font-size: 18px;
@@ -1151,6 +1153,10 @@ p {
 }
 @media screen and (min-width: 1200px) {
   .footer__sections {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: start;
@@ -1247,7 +1253,6 @@ p {
 }
 
 .footer__form-field {
-  width: 100%;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
@@ -1266,9 +1271,14 @@ p {
 .footer__form-field:focus {
   border: 1px solid #2196f3;
 }
+@media screen and (max-width: 1199.98px) {
+  .footer__form-field {
+    width: 100%;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__form-field {
-    max-width: 358px;
+    min-width: 358px;
     margin: 0;
     margin-right: 12px;
   }
@@ -1299,7 +1309,7 @@ p {
 
 .modal {
   position: absolute;
-  width: 450px;
+  max-width: 450px;
   padding: 40px;
   top: 50%;
   left: 50%;
@@ -1317,7 +1327,6 @@ p {
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    max-height: 581px;
   }
 }
 

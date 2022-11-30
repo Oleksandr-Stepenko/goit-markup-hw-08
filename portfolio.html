@@ -26,7 +26,15 @@
           ><span class="logo__main-part">Web</span
           ><span class="logo__second-part--dark">Studio</span></a
         >
-
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40">
+            <use href="./images/icons.svg#mobile_menu"></use>
+          </svg>
+        </button>
         <!-- Navigation -->
         <nav>
           <ul class="nav__list list">
@@ -46,7 +54,7 @@
           </ul>
         </nav>
         <ul class="header__group list">
-          <li>
+          <li class="contacts__item">
             <a class="header__contacts link" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#envelope"></use>
@@ -54,7 +62,7 @@
               info@devstudio.com</a
             >
           </li>
-          <li>
+          <li class="contacts__item">
             <a class="header__contacts link" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#smartphone"></use>
@@ -79,7 +87,7 @@
           </ul>
 
           <!----- Project overlay ----->
-          <ul class="project-list list">
+          <!-- <ul class="project-list list">
             <li class="project">
               <a class="project-link link" href="#">
                 <div class="project-thumb">
@@ -298,7 +306,7 @@
                 </div>
               </a>
             </li>
-          </ul>
+          </ul> -->
         </div>
       </section>
     </main>
@@ -306,7 +314,7 @@
     <!------ Footer ------->
     <footer class="footer">
       <div class="footer__sections container">
-        <div>
+        <div class="footer__contacts">
           <a class="logo" href="./index.html"
             ><span class="logo__main-part">Web</span
             ><span class="logo__second-part--light">Studio</span></a
@@ -335,8 +343,8 @@
             </ul>
           </address>
         </div>
-        <div>
-          <p class="subscribe">Приєднуйтесь</p>
+        <div class="subscribes">
+          <p class="subscribe__title">Приєднуйтесь</p>
           <ul class="socials list">
             <li>
               <a
@@ -394,8 +402,9 @@
         </div>
 
         <!----- Footer form ----->
+
         <div>
-          <p class="subscribe">Підпишіться на розсилку</p>
+          <p class="subscribe__title">Підпишіться на розсилку</p>
           <form>
             <input
               class="footer__form-field"
@@ -413,5 +422,78 @@
         </div>
       </div>
     </footer>
+    <!----- Mobile menu ----->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="" width="40" height="40">
+          <use href="./images/icons.svg#close_menu"></use>
+        </svg>
+      </button>
+
+      <ul class="menu list">
+        <li class="menu__item">
+          <a href="./index.html" class="menu__link link">Студія</a>
+        </li>
+        <li class="menu__item">
+          <a href="./portfolio.html" class="menu__link menu__link--current link"
+            >Портфоліо</a
+          >
+        </li>
+        <li class="menu__item">
+          <a href="#" class="menu__link link">Контакти</a>
+        </li>
+      </ul>
+      <ul class="menu__group list">
+        <li class="menu__contacts">
+          <a class="menu__tel link" href="tel:+380961111111">
+            +38 096 111 11 11
+          </a>
+        </li>
+        <li class="menu__contacts">
+          <a class="menu__mail link" href="mailto:info@devstudio.com">
+            info@devstudio.com
+          </a>
+        </li>
+      </ul>
+      <ul class="menu__socials-group list">
+        <li class="menu__socials">
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="menu__socials-link link"
+            >Instagram</a
+          >
+        </li>
+        <li class="menu__socials">
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="menu__socials-link link"
+            >Twitter</a
+          >
+        </li>
+        <li class="menu__socials">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="menu__socials-link link"
+            >Facebook</a
+          >
+        </li>
+        <li class="menu__socials">
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="nofollow noopener noreferrer"
+            class="menu__socials-link link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
