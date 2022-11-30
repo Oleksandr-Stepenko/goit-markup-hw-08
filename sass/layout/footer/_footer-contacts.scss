@@ -1,3 +1,10 @@
+.footer__contacts {
+	@media screen and (min-width:768px) and (max-width:1199.98px) {
+		margin-right: 165px;
+		margin-bottom: 60px;
+	}
+}
+
 .address {
 	margin-top: 20px;
 }

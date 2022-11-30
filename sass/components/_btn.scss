@@ -18,6 +18,11 @@
 	&:focus {
 		background-color: $button-color-focus;
 	}
+
+	@media screen and (min-width:1200px) {
+		padding: 10px 32px;
+
+	}
 }
 
 // .hero__btn {
