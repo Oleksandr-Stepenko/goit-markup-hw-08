@@ -1202,7 +1202,7 @@ p {
   margin-top: 9px;
 }
 
-@media screen and (max-width: 1199.98px) {
+@media screen and (max-width: 767.98px) {
   .subscribes {
     margin-top: 60px;
     margin-bottom: 60px;
@@ -1314,6 +1314,12 @@ p {
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    max-height: 581px;
+  }
+}
 
 .button-close {
   position: absolute;
@@ -1356,6 +1362,11 @@ p {
   margin-bottom: 12px;
   color: #212121;
 }
+@media screen and (min-width: 1200px) {
+  .form-title {
+    line-height: 1.15;
+  }
+}
 
 textarea {
   resize: none;
@@ -1365,6 +1376,11 @@ textarea {
   width: 370px;
   margin-left: auto;
   margin-right: auto;
+}
+@media screen and (min-width: 1200px) {
+  .calling-form {
+    width: 448px;
+  }
 }
 
 .modal-form-field {
@@ -1390,6 +1406,12 @@ textarea {
   letter-spacing: 0.01em;
   color: #757575;
 }
+@media screen and (min-width: 1200px) {
+  .form-label {
+    margin-bottom: 6px;
+    line-height: 0.86;
+  }
+}
 
 .form-input {
   font-size: 16px;
@@ -1410,6 +1432,11 @@ textarea {
   fill: currentColor;
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .form-icon {
+    top: 28px;
+  }
 }
 
 .form-field:focus-within > .form-comment,
@@ -1433,6 +1460,11 @@ textarea {
 
 .modal-coment-field {
   margin-bottom: 14px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-coment-field {
+    margin-bottom: 20px;
+  }
 }
 
 .form-checkbox {
@@ -1485,6 +1517,12 @@ textarea {
           user-select: none;
   color: #757575;
 }
+@media screen and (min-width: 1200px) {
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+}
 
 .checkbox-link {
   font-weight: 400;
@@ -1494,4 +1532,10 @@ textarea {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #2196f3;
+}
+@media screen and (min-width: 1200px) {
+  .checkbox-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }/*# sourceMappingURL=main.css.map */
