@@ -36,6 +36,15 @@
 	border: none;
 	border-radius: 50%;
 	outline: none;
+
+	&:hover,
+	&:focus {
+		color: $color-text-logo;
+	}
+}
+
+.menu-toggle {
+	fill: currentColor;
 }
 
 @media (min-width: 768px) {
@@ -45,9 +54,6 @@
 }
 
 .menu {
-	// display: flex;
-	// flex-wrap: wrap;
-	// flex-direction: column;
 	margin-bottom: auto;
 }
 
