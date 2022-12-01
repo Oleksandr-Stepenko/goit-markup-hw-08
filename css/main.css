@@ -402,6 +402,7 @@ p {
   margin-right: 10px;
   fill: currentColor;
 }
+
 .hero {
   background-color: #c4c4c4;
   text-align: center;
@@ -1044,14 +1045,12 @@ p {
 }
 
 .filter-list {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 50px;
   gap: 8px;
 }
